@@ -1,9 +1,5 @@
 #include <iostream>
-
-#include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
+#include "../include/Game.h"
 
 
 int main() {
@@ -22,6 +18,8 @@ int main() {
                 case sf::Event::KeyPressed:
                     if(ev.key.code == sf::Keyboard::Escape)
                         window.close();
+                    break;
+                default:
                     break;
             }
         }
